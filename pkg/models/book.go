@@ -1,8 +1,8 @@
 package models
 
 import (
-	"github.com/akhil/go-bookstore/pkg/config"
 	"github.com/jinzhu/gorm"
+	"github.com/prasaddls/go-bookmicroservice/pkg/config"
 )
 
 var db *gorm.DB

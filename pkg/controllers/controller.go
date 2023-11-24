@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/akhil/go-bookstore/pkg/models"
 	"github.com/akhil/go-bookstore/pkg/utils"
 	"github.com/gorilla/mux"
+	"github.com/prasaddls/go-bookmicroservice/pkg/models"
 )
 
 var NewBook models.Book

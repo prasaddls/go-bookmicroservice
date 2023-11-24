@@ -7,3 +7,7 @@ go get "github.com/gorilla/mux"
 
 
 git remote add origin git@github.com:prasaddls/go-bookmicroservice.git
+git branch -M main
+git add .
+git commit -m "initial commit"
+git push -u origin main

@@ -11,3 +11,6 @@ git branch -M main
 git add .
 git commit -m "initial commit"
 git push -u origin main
+
+
+go mod tidy  to download all packages 

@@ -5,19 +5,10 @@ import (
 	"github.com/prasaddls/go-bookmicroservice/pkg/controllers"
 )
 
-var RegisterBookStoreRoutes = func(router *mux.Router) {
-	// Create book
-	router.HandleFunc("/books", controllers.CreateBook).Methods("POST")
-
-	// Get all books
-	router.HandleFunc("/books", controllers.GetBooks).Methods("GET")
-
-	// Get a specific book by ID
-	router.HandleFunc("/books/{id}", controllers.GetBook).Methods("GET")
-
-	// Update a specific book by ID
-	router.HandleFunc("/books/{id}", controllers.UpdateBook).Methods("PUT")
-
-	// Delete a specific book by ID
-	router.HandleFunc("/books/{id}", controllers.DeleteBook).Methods("DELETE")
+var RegisterBookStoreRoutes = func(r *mux.Router) {
+	r.HandleFunc("/books", controllers.CreateBook).Methods("POST")
+	r.HandleFunc("/books", controllers.GetBooks).Methods("GET")
+	r.HandleFunc("/books/{id}", controllers.GetBook).Methods("GET")
+	r.HandleFunc("/books/{id}", controllers.UpdateBook).Methods("PUT")
+	r.HandleFunc("/books/{id}", controllers.DeleteBook).Methods("DELETE")
 }

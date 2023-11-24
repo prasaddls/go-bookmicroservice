@@ -1,4 +1,4 @@
-module github.com/prasadls/go-bookmicroservice
+module github.com/prasaddls/go-bookmicroservice
 
 go 1.21.4
 
